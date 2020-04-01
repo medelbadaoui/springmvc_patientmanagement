@@ -69,6 +69,7 @@ public class PatientController {
     public String edit(Model model, Long id) {
         Patient p = patientRepository.getOne(id);
         model.addAttribute("patient", p);
+        System.out.println("hello");
         return "editpatient";
     }
 
